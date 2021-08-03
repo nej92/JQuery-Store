@@ -8,6 +8,7 @@ $("#marca-Samsung").on('click', function (){
       for (m of soloSamsung){
         $('#monitores-cont-general').append(
         `<div class="marca-samsung-cont estilo-cont">
+          <img class="seccion-imgs" src="${m.img}">
           <p>${m.marca}</p>
           <p>$${m.precio}</p>
           <p>${m.resolucion}</p>
@@ -27,6 +28,7 @@ $("#marca-Samsung").on('click', function (){
       for (m of soloLG){
         $('#monitores-cont-general').append(
         `<div class="marca-LG-cont estilo-cont">
+          <img class="seccion-imgs" src="${m.img}">
           <p>${m.marca}</p>
           <p>$${m.precio}</p>
           <p>${m.resolucion}</p>
@@ -46,6 +48,7 @@ $("#marca-Samsung").on('click', function (){
       for (m of soloLenovo){
         $('#monitores-cont-general').append(
         `<div class="marca-Lenovo-cont estilo-cont">
+          <img class="seccion-imgs" src="${m.img}">
           <p>${m.marca}</p>
           <p>$${m.precio}</p>
           <p>${m.resolucion}</p>
