@@ -1,5 +1,5 @@
 ///////////////////
-//FILTRO
+//FILTRO MARCA
 ///////////////////
 $("#marca-Samsung").on('click', function (){
     if ($('#marca-Samsung').prop ("checked")){
@@ -60,3 +60,7 @@ $("#marca-Samsung").on('click', function (){
       $('.marca-Lenovo-cont').remove();
     }
   });
+
+///////////////////
+//FILTRO
+///////////////////
