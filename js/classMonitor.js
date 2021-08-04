@@ -1,12 +1,12 @@
 class Monitor{
     constructor(desc, precio, marca, resolucion, tamaño, img){
       
-      this.desc = desc;
-      this.precio = precio;
-      this.marca = marca;
-      this.resolucion = resolucion;
-      this.tamaño = tamaño;
-      this.img = img;
+    this.desc = desc;
+    this.precio = precio;
+    this.marca = marca;
+    this.resolucion = resolucion;
+    this.tamaño = tamaño;
+    this.img = img;
     }
   
 }
