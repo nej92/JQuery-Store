@@ -105,6 +105,11 @@ body {
   display: flex;
   justify-content: space-around;
 }
+
+.carrito-estilo {
+  width: auto;
+  height: auto;
+}
 /*-----------------------------------RESPONSIVE-----------------------------------*/
 @media (max-width: 1250px) {
   .h-nav {
