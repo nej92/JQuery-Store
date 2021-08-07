@@ -27,10 +27,11 @@ $("#marca-Samsung").on('click', function (){
         $('#cont-general').append(
         `<div class="marca-LG-cont estilo-cont">
           <img class="seccion-imgs" src="${m.img}">
-          <p>${m.marca}</p>
-          <p>$${m.precio}</p>
+          <p class="marca">${m.marca}</p>
+          <p class="precio">$${m.precio}</p>
           <p>${m.resolucion}</p>
           <p>${m.tamaño}</p>
+          <button class="btn-carro-estilo agregar-carrito">Agregar al carrito</button>
         </div>`);
       } 
     }else{
@@ -45,10 +46,11 @@ $("#marca-Samsung").on('click', function (){
         $('#cont-general').append(
         `<div class="marca-Lenovo-cont estilo-cont">
           <img class="seccion-imgs" src="${m.img}">
-          <p>${m.marca}</p>
-          <p>$${m.precio}</p>
+          <p class="marca">${m.marca}</p>
+          <p class="precio">$${m.precio}</p>
           <p>${m.resolucion}</p>
           <p>${m.tamaño}</p>
+          <button class="btn-carro-estilo agregar-carrito">Agregar al carrito</button>
         </div>`);
       } 
     }else{
@@ -63,10 +65,11 @@ $("#marca-Samsung").on('click', function (){
         $('#cont-general').append(
         `<div class="marca-Dell-cont estilo-cont">
           <img class="seccion-imgs" src="${m.img}">
-          <p>${m.marca}</p>
-          <p>$${m.precio}</p>
+          <p class="marca">${m.marca}</p>
+          <p class="precio">$${m.precio}</p>
           <p>${m.resolucion}</p>
           <p>${m.tamaño}</p>
+          <button class="btn-carro-estilo agregar-carrito">Agregar al carrito</button>
         </div>`);
       } 
     }else{
