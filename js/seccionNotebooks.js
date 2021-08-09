@@ -12,6 +12,7 @@ $("#marca-IdeaPad").on('click', function (){
           <p class="precio">$${n.precio}</p>
           <p>${n.disco}</p>
           <p>${n.procesador}</p>
+          <p class="id-producto" id="${n.id}"><p>
           <button class="btn-carro-estilo agregar-carrito">Agregar al carrito</button>
         </div>`);
       } 
@@ -31,6 +32,7 @@ $("#marca-IdeaPad").on('click', function (){
           <p class="precio">$${n.precio}</p>
           <p>${n.disco}</p>
           <p>${n.procesador}</p>
+          <p class="id-producto" id="${n.id}"><p>
           <button class="btn-carro-estilo agregar-carrito">Agregar al carrito</button>
         </div>`);
       } 
@@ -50,6 +52,7 @@ $("#marca-IdeaPad").on('click', function (){
           <p class="precio">$${n.precio}</p>
           <p>${n.disco}</p>
           <p>${n.procesador}</p>
+          <p class="id-producto" id="${n.id}"><p>
           <button class="btn-carro-estilo agregar-carrito">Agregar al carrito</button>
         </div>`);
       } 

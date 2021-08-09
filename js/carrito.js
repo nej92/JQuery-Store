@@ -3,7 +3,7 @@ class Carrito {
     comprarProducto(e){
         e.preventDefault();
         if(e.target.classList.contains('agregar-carrito')){
-            const productoAlCarro = e.target.parentElement;
+            const productoAlCarro = e.target.parentElement.parentElement;
             this.leerDatosProducto(productoAlCarro);
         }
     }
@@ -14,6 +14,7 @@ class Carrito {
             img : productoAlCarro.querySelector('img').src,
             marca : productoAlCarro.querySelector('.marca').textContent,
             precio : productoAlCarro.querySelector('.precio').textContent,
+            id : productoAlCarro.querySelector('.id-producto').getAttribute('id'),
             cantidad : 1
         }
             
@@ -40,7 +41,7 @@ class Carrito {
         let producto, productoID;
         if (e.target.classList.contains('borrar-producto')){
             e.target.parentElement.remove();
-            producto = e.target.parentElement;
+            producto = e.target.parentElement.parentElement;
             productoID = producto.querySelector('a').getAttribute('id');
         }
         this.eliminarProductoLocalStorage(productoID);
@@ -87,15 +88,15 @@ class Carrito {
     leerLocalStorage(){
         let productosLS;
         productosLS = this.obtenerProductosLocalStorage();
-        productosLS.forEach(function (productoAlCarro){
+        productosLS.forEach(function (producto){
             const row = document.createElement('tr');
-        row.innerHTML = `
+            row.innerHTML = `
             <td>
-                <img src="${productoAlCarro.img}" width=50>
+                <img src="${producto.img}" width=50>
             </td>
-            <td>${productoAlCarro.marca}</td>
-            <td>${productoAlCarro.precio}</td>
-            <a href="#" class="borrar-producto" id="${productoAlCarro.id}">X</a>
+            <td>${producto.marca}</td>
+            <td>${producto.precio}</td>
+            <a href="#" class="borrar-producto" id="${producto.id}">X</a>
             `;
             listaDelCarrito.appendChild(row);
         });
@@ -105,9 +106,15 @@ class Carrito {
         localStorage.clear();
     }
 
-    procesarPedido(e){
-        e.preventDefault();
-        location.href=" ";
+    calcularTotal(){
+        let productosLS;
+        let total = 0;
+        productosLS = this.obtenerProductosLocalStorage();
+        for (let i=0; i<productosLS.length; i++){
+            let e = Number(productoLS[i].precio * productosLS[i].cantidad);
+            total = total + e;
+        }
+        document.getElementById('lista-carrito-total').innerHTML = total;
     }
 
 }

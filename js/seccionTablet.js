@@ -12,6 +12,7 @@ $("#marca-LenovoP11").on('click', function (){
           <p class="precio">$${t.precio}</p>
           <p>${t.disco}</p>
           <p>${t.pantalla}</p>
+          <p class="id-producto" id="${t.id}"><p>
           <button class="btn-carro-estilo agregar-carrito">Agregar al carrito</button>
         </div>`);
       } 
@@ -31,6 +32,7 @@ $("#marca-LenovoP11").on('click', function (){
           <p class="precio">$${t.precio}</p>
           <p>${t.disco}</p>
           <p>${t.pantalla}</p>
+          <p class="id-producto" id="${t.id}"><p>
           <button class="btn-carro-estilo agregar-carrito">Agregar al carrito</button>
         </div>`);
       } 
@@ -50,6 +52,7 @@ $("#marca-LenovoP11").on('click', function (){
           <p class="precio">$${t.precio}</p>
           <p>${t.disco}</p>
           <p>${t.pantalla}</p>
+          <p class="id-producto" id="${t.id}"><p>
           <button class="btn-carro-estilo agregar-carrito">Agregar al carrito</button>
         </div>`);
       } 
@@ -69,6 +72,7 @@ $("#marca-LenovoP11").on('click', function (){
           <p class="precio">$${t.precio}</p>
           <p>${t.disco}</p>
           <p>${t.pantalla}</p>
+          <p class="id-producto" id="${t.id}"><p>
           <button class="btn-carro-estilo agregar-carrito">Agregar al carrito</button>
         </div>`);
       } 

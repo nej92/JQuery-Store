@@ -12,6 +12,7 @@ $("#marca-A340").on('click', function (){
           <p class="precio">$${p.precio}</p>
           <p>${p.so}</p>
           <p>${p.procesador}</p>
+          <p class="id-producto" id="${p.id}"><p>
           <button class="btn-carro-estilo agregar-carrito">Agregar al carrito</button>
         </div>`);
       } 
@@ -31,6 +32,7 @@ $("#marca-A340").on('click', function (){
           <p class="precio">$${p.precio}</p>
           <p>${p.so}</p>
           <p>${p.procesador}</p>
+          <p class="id-producto" id="${p.id}"><p>
           <button class="btn-carro-estilo agregar-carrito">Agregar al carrito</button>
         </div>`);
       } 
@@ -50,6 +52,7 @@ $("#marca-A340").on('click', function (){
           <p class="precio">$${p.precio}</p>
           <p>${p.so}</p>
           <p>${p.procesador}</p>
+          <p class="id-producto" id="${p.id}"><p>
           <button class="btn-carro-estilo agregar-carrito">Agregar al carrito</button>
         </div>`);
       } 
@@ -69,6 +72,7 @@ $("#marca-A340").on('click', function (){
           <p class="precio">$${p.precio}</p>
           <p>${p.so}</p>
           <p>${p.procesador}</p>
+          <p class="id-producto" id="${p.id}"><p>
           <button class="btn-carro-estilo agregar-carrito">Agregar al carrito</button>
         </div>`);
       } 

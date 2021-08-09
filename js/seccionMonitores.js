@@ -12,6 +12,7 @@ $("#marca-Samsung").on('click', function (){
           <p class="precio">$${m.precio}</p>
           <p>${m.resolucion}</p>
           <p>${m.tamaño}</p>
+          <p class="id-producto" id="${m.id}"><p>
           <button class="btn-carro-estilo agregar-carrito">Agregar al carrito</button>
         </div>`);
       } 
@@ -31,6 +32,7 @@ $("#marca-Samsung").on('click', function (){
           <p class="precio">$${m.precio}</p>
           <p>${m.resolucion}</p>
           <p>${m.tamaño}</p>
+          <p class="id-producto" id="${m.id}"><p>
           <button class="btn-carro-estilo agregar-carrito">Agregar al carrito</button>
         </div>`);
       } 
@@ -50,6 +52,7 @@ $("#marca-Samsung").on('click', function (){
           <p class="precio">$${m.precio}</p>
           <p>${m.resolucion}</p>
           <p>${m.tamaño}</p>
+          <p class="id-producto" id="${m.id}"><p>
           <button class="btn-carro-estilo agregar-carrito">Agregar al carrito</button>
         </div>`);
       } 
@@ -69,6 +72,7 @@ $("#marca-Samsung").on('click', function (){
           <p class="precio">$${m.precio}</p>
           <p>${m.resolucion}</p>
           <p>${m.tamaño}</p>
+          <p class="id-producto" id="${m.id}"><p>
           <button class="btn-carro-estilo agregar-carrito">Agregar al carrito</button>
         </div>`);
       } 
