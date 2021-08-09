@@ -16,6 +16,7 @@ class Carrito {
             precio : productoAlCarro.querySelector('.precio').textContent,
             cantidad : 1
         }
+            
         this.insertarEnCarrito(infoProducto);
 
     }
@@ -102,6 +103,11 @@ class Carrito {
 
     vaciarLocalStorage(){
         localStorage.clear();
+    }
+
+    procesarPedido(e){
+        e.preventDefault();
+        location.href=" ";
     }
 
 }

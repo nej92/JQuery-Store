@@ -3,6 +3,7 @@ const carrito = document.getElementById('carrito');
 const conteinerProductos = document.getElementById('cont-general');
 const listaDelCarrito = document.querySelector('#lista-carrito');
 const vaciarCarrito = document.getElementById('vaciar-carrito');
+const procesarPedido = document.getElementById('carrito-final');
 
 cargarEventos();
 

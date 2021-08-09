@@ -8,10 +8,11 @@ $("#marca-IdeaPad").on('click', function (){
         $('#cont-general').append(
         `<div class="marca-IdeaPad-cont estilo-cont">
           <img class="seccion-imgs" src="${n.img}">
-          <p>${n.marca}</p>
-          <p>$${n.precio}</p>
+          <p class="marca">${n.marca}</p>
+          <p class="precio">$${n.precio}</p>
           <p>${n.disco}</p>
           <p>${n.procesador}</p>
+          <button class="btn-carro-estilo agregar-carrito">Agregar al carrito</button>
         </div>`);
       } 
     }else{
@@ -26,10 +27,11 @@ $("#marca-IdeaPad").on('click', function (){
         $('#cont-general').append(
         `<div class="marca-Yoga-cont estilo-cont">
           <img class="seccion-imgs" src="${n.img}">
-          <p>${n.marca}</p>
-          <p>$${n.precio}</p>
+          <p class="marca">${n.marca}</p>
+          <p class="precio">$${n.precio}</p>
           <p>${n.disco}</p>
           <p>${n.procesador}</p>
+          <button class="btn-carro-estilo agregar-carrito">Agregar al carrito</button>
         </div>`);
       } 
     }else{
@@ -44,10 +46,11 @@ $("#marca-IdeaPad").on('click', function (){
         $('#cont-general').append(
         `<div class="marca-ThinkBook-cont estilo-cont">
           <img class="seccion-imgs" src="${n.img}">
-          <p>${n.marca}</p>
-          <p>$${n.precio}</p>
+          <p class="marca">${n.marca}</p>
+          <p class="precio">$${n.precio}</p>
           <p>${n.disco}</p>
           <p>${n.procesador}</p>
+          <button class="btn-carro-estilo agregar-carrito">Agregar al carrito</button>
         </div>`);
       } 
     }else{

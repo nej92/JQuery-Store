@@ -8,10 +8,11 @@ $("#marca-A340").on('click', function (){
         $('#cont-general').append(
         `<div class="marca-A340-cont estilo-cont">
           <img class="seccion-PC-imgs" src="${p.img}">
-          <p>${p.marca}</p>
-          <p>$${p.precio}</p>
+          <p class="marca">${p.marca}</p>
+          <p class="precio">$${p.precio}</p>
           <p>${p.so}</p>
           <p>${p.procesador}</p>
+          <button class="btn-carro-estilo agregar-carrito">Agregar al carrito</button>
         </div>`);
       } 
     }else{
@@ -26,10 +27,11 @@ $("#marca-A340").on('click', function (){
         $('#cont-general').append(
         `<div class="marca-3iAIO-cont estilo-cont">
           <img class="seccion-PC-imgs" src="${p.img}">
-          <p>${p.marca}</p>
-          <p>$${p.precio}</p>
+          <p class="marca">${p.marca}</p>
+          <p class="precio">$${p.precio}</p>
           <p>${p.so}</p>
           <p>${p.procesador}</p>
+          <button class="btn-carro-estilo agregar-carrito">Agregar al carrito</button>
         </div>`);
       } 
     }else{
@@ -44,10 +46,11 @@ $("#marca-A340").on('click', function (){
         $('#cont-general').append(
         `<div class="marca-330AIO-cont estilo-cont">
           <img class="seccion-PC-imgs" src="${p.img}">
-          <p>${p.marca}</p>
-          <p>$${p.precio}</p>
+          <p class="marca">${p.marca}</p>
+          <p class="precio">$${p.precio}</p>
           <p>${p.so}</p>
           <p>${p.procesador}</p>
+          <button class="btn-carro-estilo agregar-carrito">Agregar al carrito</button>
         </div>`);
       } 
     }else{
@@ -62,10 +65,11 @@ $("#marca-A340").on('click', function (){
         $('#cont-general').append(
         `<div class="marca-V50aAIO-cont estilo-cont">
           <img class="seccion-PC-imgs" src="${p.img}">
-          <p>${p.marca}</p>
-          <p>$${p.precio}</p>
+          <p class="marca">${p.marca}</p>
+          <p class="precio">$${p.precio}</p>
           <p>${p.so}</p>
           <p>${p.procesador}</p>
+          <button class="btn-carro-estilo agregar-carrito">Agregar al carrito</button>
         </div>`);
       } 
     }else{

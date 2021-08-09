@@ -12,7 +12,7 @@
     <header class="h-nav">
       <div class="logo-tienda-cont">
         <a href="index.html"
-          ><img class="logo-tienda" src="media/pngs/logoTienda.jpeg" alt=""
+          ><img class="logo-tienda" src="media/pngs/logoTienda.png" alt=""
         /></a>
       </div>
       <nav id="menu-nav" class="catalogo">
@@ -36,17 +36,11 @@
         /></a>
       </nav>
 
-      <div class="mv-link-title-cont">
-        <a href="#catalogo"
-          ><img
-            id="carrito-marcador"
-            class="carrito"
-            src="media/pngs/shopping-cart.png"
-            alt=""
-        /></a>
-      </div>
+      <div class="mv-link-title-cont"></div>
     </header>
-
+    <!--SECCION-->
+    <h2>NOTEBOOKS</h2>
+    <!---->
     <!--FILTRO-->
     <h4 class="">Buscar marca</h4>
     <div class="filtro-marca-cont">
@@ -67,6 +61,13 @@
     <div id="cont-general" class="cont-general"></div>
     <!---->
 
+    <!--CARRITO-->
+    <div id="carrito" class="carrito-estilo">
+      <div id="lista-carrito"></div>
+      <button id="vaciar-carrito">Vaciar carrito</button>
+    </div>
+    <!---->
+
     <script
       src="https://code.jquery.com/jquery-3.6.0.min.js"
       integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
@@ -74,5 +75,7 @@
     ></script>
     <script src="js/classNotebooks.js"></script>
     <script src="js/seccionNotebooks.js"></script>
+    <script src="js/carrito.js"></script>
+    <script src="js/pedido.js"></script>
   </body>
 </html>
