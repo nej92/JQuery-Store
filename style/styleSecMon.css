@@ -74,13 +74,16 @@ body {
   height: auto;
   font-size: 2rem;
   padding: 1em;
-  border: 1px solid red;
 }
 
 .estilo-cont {
+  padding-top: 0.5em;
+  padding-bottom: 1em;
+  border-collapse: collapse;
   width: 10em;
   height: 10em;
-  border: 1px solid green;
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
 }
 
 .estilo-cont {
@@ -101,6 +104,31 @@ body {
   height: 8em;
 }
 /*-----------------------------------FILTRO DIV-----------------------------------*/
+.titulo-seccion {
+  margin-top: 1.5em;
+  margin-left: 1.5em;
+  font-size: 3em;
+  font-family: bebas NEUE;
+}
+
+.buscar-marca-title {
+  font-size: 1.5em;
+  letter-spacing: 0.2em;
+  font-family: bebas NEUE;
+}
+
+.elegir-marca {
+  font-size: 1.5em;
+  margin-left: 0.5em;
+  margin-right: 0.5em;
+}
+
+.btn-carro-estilo {
+  padding: 0.5em;
+  color: #ffff;
+  background-color: black;
+}
+
 .filtro-cont-general {
   display: flex;
   justify-content: space-around;
@@ -110,6 +138,22 @@ body {
   width: auto;
   height: auto;
 }
+/*-----------------------------------CARRITO-----------------------------------*/
+td {
+  padding: 0.5em;
+}
+
+#vaciar-carrito {
+  padding: 0.5em;
+  color: #ffff;
+  background-color: black;
+}
+
+.gracias {
+  font-size: 2em;
+  color: #ff0000;
+}
+
 /*-----------------------------------RESPONSIVE-----------------------------------*/
 @media (max-width: 1250px) {
   .h-nav {

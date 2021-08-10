@@ -39,26 +39,28 @@
       <div class="mv-link-title-cont"></div>
     </header>
     <!--SECCION-->
-    <h2>TABLETS</h2>
+    <h2 class="titulo-seccion">TABLETS</h2>
     <!---->
     <!--FILTRO-->
-    <h4 class="">Buscar marca</h4>
-    <div class="filtro-marca-cont">
-      <input id="marca-LenovoP11" type="checkbox" />
-      <label for="marca-LenovoP11">Lenovo P11</label>
+    <div class="filtro-cont-general">
+      <div>
+        <h4 class="buscar-marca-title">Buscar marca</h4>
+        <div class="filtro-marca-cont">
+          <input id="marca-LenovoP11" type="checkbox" />
+          <label class="elegir-marca" for="marca-LenovoP11">Lenovo P11</label>
 
-      <input id="marca-YogaSmart" type="checkbox" />
-      <label for="marca-YogaSmart">Yoga Smart</label>
+          <input id="marca-YogaSmart" type="checkbox" />
+          <label class="elegir-marca" for="marca-YogaSmart">Yoga Smart</label>
 
-      <input id="marca-LenovoM10" type="checkbox" />
-      <label for="marca-LenovoM10">Lenovo M10</label>
+          <input id="marca-LenovoM10" type="checkbox" />
+          <label class="elegir-marca" for="marca-LenovoM10">Lenovo M10</label>
 
-      <input id="marca-LenovoM8" type="checkbox" />
-      <label for="marca-LenovoM8">Lenovo M8</label>
+          <input id="marca-LenovoM8" type="checkbox" />
+          <label class="elegir-marca" for="marca-LenovoM8">Lenovo M8</label>
+        </div>
+      </div>
     </div>
     <!---->
-
-    <div>Filtrar x especificaciones</div>
 
     <!--RESULTADO-->
     <div id="cont-general" class="cont-general"></div>
@@ -67,10 +69,8 @@
     <!--CARRITO-->
     <div id="carrito" class="carrito-estilo">
       <div id="lista-carrito"></div>
-      <button id="calcularTotal-carrito">Calcular Total</button>
-      <button id="vaciar-carrito">Vaciar carrito</button>
-      <p id="lista-carrito-total"></p>
-      <button id="btnComprar-carrito">Comprar</button>
+      <button id="vaciar-carrito">Comprar</button>
+      <p class="gracias" style="display: none">¡Gracias por tu compra!</p>
     </div>
     <!---->
 

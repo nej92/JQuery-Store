@@ -1,6 +1,3 @@
-///////////////////
-//MAS VENDIDOS
-///////////////////
 $("#product1").click(() =>  {
     $('#product1').slideUp('slow', function () {
       $('#mostrar-data1').append(
@@ -31,11 +28,11 @@ $("#product1").click(() =>  {
     $('#product3').slideUp('slow', function () {
       $('#mostrar-data3').append(
       `<div class="mon1">
-      <h2 class="pmv-title">${grupoMonitores[3].marca}</h2>
-      <p> ${grupoMonitores[3].desc}</p></br>
-      <li> PRECIO: $${grupoMonitores[3].precio}</li>
-      <li> RESOLUCION: ${grupoMonitores[3].resolucion}</li>
-      <li> TAMAÑO: ${grupoMonitores[3].tamaño}</li>
+      <h2 class="pmv-title">${grupoMonitores[9].marca}</h2>
+      <p> ${grupoMonitores[9].desc}</p></br>
+      <li> PRECIO: $${grupoMonitores[9].precio}</li>
+      <li> RESOLUCION: ${grupoMonitores[9].resolucion}</li>
+      <li> TAMAÑO: ${grupoMonitores[9].tamaño}</li>
       </div>`);
       }); 
   });

@@ -21,7 +21,7 @@ class Carrito {
         this.insertarEnCarrito(infoProducto);
 
     }
-
+    // envia producto a la lista de compra
     insertarEnCarrito(productoAlCarro){
         const row = document.createElement('tr');
         row.innerHTML = `
@@ -36,17 +36,18 @@ class Carrito {
         this.guardarProductosLocalStorage(productoAlCarro);
     }
 
+    //elimina un producto de la lista de compra
     eliminarProducto(e){
         e.preventDefault();
-        let producto, productoID;
+        let producto;
         if (e.target.classList.contains('borrar-producto')){
             e.target.parentElement.remove();
             producto = e.target.parentElement.parentElement;
-            productoID = producto.querySelector('a').getAttribute('id');
         }
-        this.eliminarProductoLocalStorage(productoID);
+        
     }
 
+    // elimina todos los productos de la lista de compra
     vaciarCarrito(e){
         e.preventDefault();
         while(listaDelCarrito.firstChild){
@@ -73,48 +74,10 @@ class Carrito {
         return productoLS;
     }
 
-    eliminarProductoLocalStorage(productoID){
-        let productosLS;
-        productosLS = this.guardarProductosLocalStorage();
-        productosLS.forEach (function (productoLS, i){
-            if(productoLS.id === productoID){
-                productosLS.splice(i, 1);
-            }
-        });
-
-        localStorage.setItem('productos', JSON.stringify(productosLS));
-    }
-
-    leerLocalStorage(){
-        let productosLS;
-        productosLS = this.obtenerProductosLocalStorage();
-        productosLS.forEach(function (producto){
-            const row = document.createElement('tr');
-            row.innerHTML = `
-            <td>
-                <img src="${producto.img}" width=50>
-            </td>
-            <td>${producto.marca}</td>
-            <td>${producto.precio}</td>
-            <a href="#" class="borrar-producto" id="${producto.id}">X</a>
-            `;
-            listaDelCarrito.appendChild(row);
-        });
-    }
-
     vaciarLocalStorage(){
         localStorage.clear();
-    }
-
-    calcularTotal(){
-        let productosLS;
-        let total = 0;
-        productosLS = this.obtenerProductosLocalStorage();
-        for (let i=0; i<productosLS.length; i++){
-            let e = Number(productoLS[i].precio * productosLS[i].cantidad);
-            total = total + e;
-        }
-        document.getElementById('lista-carrito-total').innerHTML = total;
+        $('.gracias').show();
+        $('.gracias').hide(5000);
     }
 
 }

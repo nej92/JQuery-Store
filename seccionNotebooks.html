@@ -39,24 +39,25 @@
       <div class="mv-link-title-cont"></div>
     </header>
     <!--SECCION-->
-    <h2>NOTEBOOKS</h2>
+    <h2 class="titulo-seccion">NOTEBOOKS</h2>
     <!---->
     <!--FILTRO-->
-    <h4 class="">Buscar marca</h4>
-    <div class="filtro-marca-cont">
-      <input id="marca-IdeaPad" type="checkbox" />
-      <label for="marca-IdeaPad">IdeaPad</label>
+    <div class="filtro-cont-general">
+      <div>
+        <h4 class="buscar-marca-title">Buscar marca</h4>
+        <div class="filtro-marca-cont">
+          <input id="marca-IdeaPad" type="checkbox" />
+          <label class="elegir-marca" for="marca-IdeaPad">IdeaPad</label>
 
-      <input id="marca-Yoga" type="checkbox" />
-      <label for="marca-Yoga">Yoga</label>
+          <input id="marca-Yoga" type="checkbox" />
+          <label class="elegir-marca" for="marca-Yoga">Yoga</label>
 
-      <input id="marca-ThinkBook" type="checkbox" />
-      <label for="marca-ThinkBook">ThinkBook</label>
+          <input id="marca-ThinkBook" type="checkbox" />
+          <label class="elegir-marca" for="marca-ThinkBook">ThinkBook</label>
+        </div>
+      </div>
     </div>
     <!---->
-
-    <div>Filtrar x especificaciones</div>
-
     <!--RESULTADO-->
     <div id="cont-general" class="cont-general"></div>
     <!---->
@@ -64,7 +65,8 @@
     <!--CARRITO-->
     <div id="carrito" class="carrito-estilo">
       <div id="lista-carrito"></div>
-      <button id="vaciar-carrito">Vaciar carrito</button>
+      <button id="vaciar-carrito">Comprar</button>
+      <p class="gracias" style="display: none">¡Gracias por tu compra!</p>
     </div>
     <!---->
 

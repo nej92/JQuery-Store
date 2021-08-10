@@ -169,10 +169,25 @@ body{
     .mas-vendidos-cont{
         flex-wrap: wrap;
     }
+
+}
+
+@media (max-width: 768px){
+    .carousel-item{
+        height: 35em;
+    }
 }
 
 @media (max-width: 576px){
     .h-nav{
+        font-size: 1rem;
+    }
+
+    .carousel-item{
+        height: 25em;
+    }
+
+    .catalogo-contein{
         font-size: 1rem;
     }
 }
